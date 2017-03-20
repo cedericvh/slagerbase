@@ -1,0 +1,115 @@
+
+.page-header {
+    border-bottom: 1px solid #eee;
+    margin: 0px 0 20px;
+    padding-bottom: 9px;
+}
+
+.page-header h2 {
+
+    padding:0px;
+    margin:0px;
+
+}
+
+.bx-wrapper img {
+    min-width: 100%;
+}
+
+a {
+    color: #8C6905;
+}
+
+
+.chrono_credits, .acymailing_footer {
+
+    display:none;
+
+}
+
+
+.form-container a {
+    color: #fff;
+    text-decoration: none;
+    background: #63511f;
+    min-height: 42px;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 42px;
+    padding-right: 28px;
+    padding-left: 28px;
+    position: relative;
+    float: left;
+    text-transform: uppercase;
+    width: inherit;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+#acyuserinfo label, #acyusersubscription label {
+    display: block;
+}
+.form-container label {
+    display: block;
+}
+
+.nieuwsrechts {
+
+    background-color:#b2741c;
+    padding:10px;
+    font-size:1.3em;
+    color:#fff;
+    margin-bottom:10px;
+    text-align:center;
+
+}
+
+
+.btn-primary, .btn-primary:hover {
+    background-color: #b2741c;
+    border-color: #b2741c;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .logo-cont {
+        transform:  translateX(-50%);
+        -webkit-transform:  translateX(-50%);
+        -moz-transform:  translateX(-50%);
+        -o-transform:  translateX(-50%);
+        -ms-transform:  translateX(-50%);
+    }
+}
+
+.owners-names {
+    text-align: center;
+}
+
+.promo {
+  
+  border:solid 2px #63511f;
+  text-align:center;
+  
+}
+
+.promo h4 {
+  
+  color:#b2741c;
+  
+}
+
+.sidebar-wrap>ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+
+body, main {
+  
+  font-size:1.2em;
+  
+}
+
+
+

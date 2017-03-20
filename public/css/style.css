@@ -1,0 +1,794 @@
+
+/* line 1, sass/_base.scss */
+body {
+    font-family: 'Slabo 27px', Georgia, serif;
+    color: #58585a;
+    min-width: 320px;
+}
+
+/* line 7, sass/_base.scss */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* line 13, sass/_base.scss */
+.after-footer,
+.before-header {
+    min-height: 65px;
+    background: url(../img/pattern.png);
+}
+
+/* line 1, sass/elements/_header.scss */
+.logo-cont {
+    position: relative;
+    top: -65px;
+    height: 40px;
+    width: 340px;
+}
+
+/* line 8, sass/elements/_header.scss */
+.navbar-brand {
+    height: auto;
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-top: 54px;
+    padding-bottom: 27px;
+    position: absolute;
+    background: #fff;
+    -webkit-box-shadow: 1px 3px 9px 0px rgba(6, 6, 6, 0.5);
+    -moz-box-shadow: 1px 3px 9px 0px rgba(6, 6, 6, 0.5);
+    box-shadow: 1px 3px 9px 0px rgba(6, 6, 6, 0.5);
+}
+
+/* line 22, sass/elements/_header.scss */
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    background: #fff;
+}
+
+/* line 26, sass/elements/_header.scss */
+.navbar-default {
+    border-bottom: 7px solid #b2741c;
+    background: #fff;
+}
+
+/* line 31, sass/elements/_header.scss */
+.navbar-default .navbar-collapse {
+    min-height: 97px;
+}
+
+/* line 35, sass/elements/_header.scss */
+.navbar-nav {
+    margin-top: 55px;
+    float: right;
+}
+
+/* line 40, sass/elements/_header.scss */
+.navbar-default .navbar-nav > li > a {
+    padding-bottom: 7px;
+    color: #000;
+    font-weight: bold;
+    padding-right: 8px;
+    padding-left: 11px;
+}
+
+/* line 48, sass/elements/_header.scss */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* line 54, sass/elements/_header.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #b2741c;
+    background: transparent;
+}
+
+/* line 59, sass/elements/_header.scss */
+.navbar-default .navbar-nav > li > a:hover {
+    text-decoration: underline;
+}
+
+/* line 63, sass/elements/_header.scss */
+.navbar-nav > li {
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+}
+
+/* line 70, sass/elements/_header.scss */
+.navbar-nav > li:before {
+    content: '|';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #b2741c;
+}
+
+/* line 78, sass/elements/_header.scss */
+.navbar-nav > li:first-child:before {
+    display: none;
+}
+
+/* line 1, sass/elements/_footer.scss */
+footer {
+    background: #b2741c;
+}
+/* line 4, sass/elements/_footer.scss */
+footer ul li {
+    display: inline;
+    color: #fff;
+    position: relative;
+    padding: 0 5px;
+}
+/* line 11, sass/elements/_footer.scss */
+footer ul {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4em;
+    padding-left: 0;
+}
+/* line 18, sass/elements/_footer.scss */
+footer ul:first-child {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+/* line 23, sass/elements/_footer.scss */
+footer li:before {
+    content: '|';
+    position: absolute;
+    top: -1px;
+    right: -4px;
+}
+/* line 29, sass/elements/_footer.scss */
+footer li:last-child:before {
+    display: none;
+}
+
+/* line 3, sass/elements/_aside.scss */
+.sidebar-wrap .has-child a {
+    margin-bottom: 8px;
+}
+/* line 6, sass/elements/_aside.scss */
+.sidebar-wrap ul {
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+/* line 10, sass/elements/_aside.scss */
+.sidebar-wrap li {
+    background: #fff;
+    list-style: disc;
+    border-bottom: 1px solid #d8d3c7;
+    line-height: 30px;
+}
+/* line 17, sass/elements/_aside.scss */
+.sidebar-wrap li:last-child {
+    border-bottom: none;
+}
+/* line 20, sass/elements/_aside.scss */
+.sidebar-wrap > ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 60px;
+}
+/* line 25, sass/elements/_aside.scss */
+.sidebar-wrap > ul > li {
+    list-style: none;
+}
+/* line 27, sass/elements/_aside.scss */
+.sidebar-wrap > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    background: #63511f;
+    min-height: 42px;
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 42px;
+    padding-right: 28px;
+    padding-left: 28px;
+    position: relative;
+}
+/* line 41, sass/elements/_aside.scss */
+.sidebar-wrap > ul > li > a:before,
+.sidebar-wrap > ul > li > a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+/* line 48, sass/elements/_aside.scss */
+.sidebar-wrap > ul > li > a:before {
+    border-top: 21px solid transparent;
+    border-left: 17px solid #fff;
+    border-bottom: 21px solid transparent;
+    left: 0;
+}
+/* line 54, sass/elements/_aside.scss */
+.sidebar-wrap > ul > li > a:after {
+    border-top: 21px solid transparent;
+    border-right: 17px solid #fff;
+    border-bottom: 21px solid transparent;
+    right: 0;
+}
+
+/* line 1, sass/elements/_main.scss */
+main h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #b2741c;
+    text-transform: uppercase;
+}
+
+/* line 9, sass/elements/_main.scss */
+main {
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+/* line 13, sass/elements/_main.scss */
+main .main-text {
+    margin-bottom: 30px;
+}
+
+/* line 18, sass/elements/_main.scss */
+.article-img {
+    display: inline-block;
+}
+
+/* line 24, sass/elements/_main.scss */
+.address,
+.open-hours {
+    padding-left: 0;
+    margin-top: 5px;
+}
+/* line 28, sass/elements/_main.scss */
+.address li,
+.open-hours li {
+    list-style: none;
+}
+
+/* line 35, sass/elements/_main.scss */
+.form-container {
+
+    max-width: 500px;
+}
+/* line 39, sass/elements/_main.scss */
+.form-container form {
+    margin-bottom: 22px;
+}
+/* line 43, sass/elements/_main.scss */
+.form-container h1, .form-container a {
+    color: #fff;
+    text-decoration: none;
+    background: #63511f;
+    min-height: 42px;
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 42px;
+    padding-right: 28px;
+    padding-left: 28px;
+    position: relative;
+    float: left;
+    text-transform: uppercase;
+    width: 49%;
+    font-size: 16px;
+}
+/* line 61, sass/elements/_main.scss */
+.form-container h1:before,
+.form-container h1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+/* line 68, sass/elements/_main.scss */
+.form-container h1:before {
+    border-top: 21px solid transparent;
+    border-left: 17px solid #fff;
+    border-bottom: 21px solid transparent;
+    left: 0;
+}
+/* line 74, sass/elements/_main.scss */
+.form-container h1:after {
+    border-top: 21px solid transparent;
+    border-right: 17px solid #fff;
+    border-bottom: 21px solid transparent;
+    right: 0;
+}
+/* line 80, sass/elements/_main.scss */
+.form-container a {
+    margin-left: 8px;
+}
+/* line 83, sass/elements/_main.scss */
+.form-container a:hover {
+    text-decoration: underline;
+}
+/* line 87, sass/elements/_main.scss */
+.form-container a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-right: 17px solid #63511f;
+    border-bottom: 21px solid transparent;
+    left: -17px;
+}
+/* line 99, sass/elements/_main.scss */
+.form-container .btn-default {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background: #b2741c;
+    color: #fff;
+    border: none;
+}
+/* line 106, sass/elements/_main.scss */
+.form-container .btn-default:hover {
+    background: #63511f;
+}
+
+/* line 111, sass/elements/_main.scss */
+.form-control {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background: #ececec;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* line 2, sass/elements/_slider.scss */
+.slide,
+.banner-slider {
+    max-width: 100%;
+    display: block;
+}
+
+/* line 8, sass/elements/_slider.scss */
+.banner {
+    position: relative;
+    overflow: auto;
+}
+
+/* line 9, sass/elements/_slider.scss */
+.banner li {
+    list-style: none;
+}
+
+/* line 10, sass/elements/_slider.scss */
+.banner ul li {
+    float: left;
+}
+
+/* line 13, sass/elements/_slider.scss */
+.banner-slider ul li {
+    background-size: cover;
+    min-height: 450px;
+}
+
+/* line 18, sass/elements/_slider.scss */
+.banner-slider ul {
+    padding-left: 0;
+}
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+/* line 39, sass/elements/_slider.scss */
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 30px;
+    padding: 0;
+    *zoom: 1;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* line 48, sass/elements/_slider.scss */
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+    width: auto;
+}
+
+/** THEME
+===================================*/
+/* line 57, sass/elements/_slider.scss */
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: none;
+    /*left: -5px;*/
+    background: #fff;
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+/* line 74, sass/elements/_slider.scss */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+/* LOADER */
+/* line 82, sass/elements/_slider.scss */
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(../img/slider/bx_loader.gif) center center no-repeat white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+/* PAGER */
+/* line 95, sass/elements/_slider.scss */
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    /*  position: relative;
+        left: 300px;*/
+}
+
+/* line 108, sass/elements/_slider.scss */
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+/* line 114, sass/elements/_slider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #ece6df;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* line 128, sass/elements/_slider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #916f3b;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/* line 134, sass/elements/_slider.scss */
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../img/slider/controls.png) no-repeat 0 -32px;
+}
+
+/* line 139, sass/elements/_slider.scss */
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../img/slider/controls.png) no-repeat -43px -32px;
+}
+
+/* line 144, sass/elements/_slider.scss */
+.bx-wrapper .bx-prev:hover {
+    background-position: 0 0;
+}
+
+/* line 148, sass/elements/_slider.scss */
+.bx-wrapper .bx-next:hover {
+    background-position: -43px 0;
+}
+
+/* line 152, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+    display: none;
+}
+
+/* line 164, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+/* line 170, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+/* line 174, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(../img/slider/controls.png) -86px -11px no-repeat;
+    margin: 0 3px;
+}
+
+/* line 185, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+    background-position: -86px 0;
+}
+
+/* line 189, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(../img/slider/controls.png) -86px -44px no-repeat;
+    margin: 0 3px;
+}
+
+/* line 200, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+    background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+/* line 206, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+/* line 211, sass/elements/_slider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+/* line 218, sass/elements/_slider.scss */
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0);
+    width: 100%;
+}
+
+/* line 227, sass/elements/_slider.scss */
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
+
+/* line 235, sass/elements/_slider.scss */
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+/* line 240, sass/elements/_slider.scss */
+.darken {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 991px) {
+    /* line 3, sass/_media.scss */
+    .navbar-brand img {
+        max-width: 240px;
+    }
+
+    /* line 6, sass/_media.scss */
+    .bx-wrapper {
+        height: 350px;
+    }
+
+    /* line 9, sass/_media.scss */
+    .bottom {
+        position: static;
+    }
+}
+@media (max-width: 767px) {
+    /* line 15, sass/_media.scss */
+    .logo-cont {
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* line 22, sass/_media.scss */
+    .navbar-default .navbar-collapse {
+        border-color: transparent;
+        text-align: center;
+        overflow: visible;
+    }
+
+    /* line 28, sass/_media.scss */
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+    }
+
+    /* line 32, sass/_media.scss */
+    .navbar-brand {
+        padding-top: 27px;
+    }
+
+    /* line 36, sass/_media.scss */
+    .navbar-brand img {
+        max-width: 200px;
+    }
+
+    /* line 39, sass/_media.scss */
+    .logo-cont {
+        width: 256px;
+    }
+
+    /* line 43, sass/_media.scss */
+    .bx-controls {
+        display: none;
+    }
+
+    /* line 47, sass/_media.scss */
+    .bx-viewport {
+        height: 300px;
+    }
+
+    /* line 51, sass/_media.scss */
+    .navbar-nav > li:before {
+        display: none;
+    }
+
+    /* line 55, sass/_media.scss */
+    .bx-wrapper {
+        height: 300px;
+    }
+
+    /* line 59, sass/_media.scss */
+    .bx-viewport {
+        height: 300px;
+    }
+
+    /* line 63, sass/_media.scss */
+    .banner-slider ul li {
+        min-height: 300px;
+    }
+}
+@media (max-width: 508px) {
+    /* line 70, sass/_media.scss */
+    .bx-wrapper {
+        height: 250px;
+    }
+
+    /* line 74, sass/_media.scss */
+    .bx-viewport {
+        height: 250px;
+    }
+
+    /* line 78, sass/_media.scss */
+    .banner-slider ul li {
+        min-height: 250px;
+    }
+
+    /* line 82, sass/_media.scss */
+    .form-container a {
+        width: 48%;
+    }
+}
+@media (max-width: 408px) {
+    /* line 87, sass/_media.scss */
+    .bx-wrapper {
+        height: 200px;
+    }
+
+    /* line 91, sass/_media.scss */
+    .bx-viewport {
+        height: 200px;
+    }
+
+    /* line 95, sass/_media.scss */
+    .banner-slider ul li {
+        min-height: 200px;
+    }
+
+    /* line 99, sass/_media.scss */
+    .logo-cont {
+        width: 100%;
+        z-index: 0;
+    }
+
+    /* line 104, sass/_media.scss */
+    .navbar-toggle {
+        z-index: 1;
+    }
+
+    /* line 108, sass/_media.scss */
+    .navbar-default {
+        min-height: 112px;
+    }
+
+    /* line 112, sass/_media.scss */
+    .navbar-default .navbar-brand {
+        width: 100%;
+    }
+}
+@media (max-width: 380px) {
+    /* line 118, sass/_media.scss */
+    .form-container a {
+        width: 38%;
+    }
+
+    /* line 121, sass/_media.scss */
+    .form-container h1 {
+        width: 58%;
+    }
+}
+@media (max-width: 350px) {
+    /* line 127, sass/_media.scss */
+    .bx-wrapper {
+        height: 160px;
+    }
+
+    /* line 131, sass/_media.scss */
+    .bx-viewport {
+        height: 160px;
+    }
+
+    /* line 135, sass/_media.scss */
+    .banner-slider ul li {
+        min-height: 160px;
+    }
+}

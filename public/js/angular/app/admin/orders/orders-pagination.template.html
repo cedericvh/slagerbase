@@ -1,0 +1,22 @@
+<nav aria-label="Page navigation" ng-if="$ctrl.orders.data.length >= 1 && $ctrl.orders.last_page != 1">
+    <ul class="pagination">
+        <li ng-class="{disabled: $ctrl.orders.current_page <= 1}">
+            <a href="#"
+               aria-label="Previous"
+               ng-disabled="$ctrl.orders.current_page <= 1"
+               ng-click="$ctrl.getOrders({page: $ctrl.orders.current_page - 1})">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li ng-class="{active: $ctrl.orders.current_page == 1}"><a href="#" ng-disabled="$ctrl.orders.current_page == 1" ng-click="$ctrl.getOrders({page: 1})">1</a></li>
+        <li ng-class="{active: $ctrl.orders.current_page == item}" ng-repeat="item in rangeFrom($ctrl.orders.last_page - 1)"><a href="#" ng-disabled="$ctrl.current_page == item" ng-click="$ctrl.getOrders({page: item})">{{ item }}</a></li>
+        <li ng-class="{active: $ctrl.orders.current_page == $ctrl.orders.last_page}"><a href="#" ng-click="$ctrl.getOrders({page: $ctrl.orders.last_page})" ng-disabled="$ctrl.orders.current_page == $ctrl.orders.last_page">{{ $ctrl.orders.last_page }}</a></li>
+        <li ng-class="{disabled: $ctrl.orders.current_page >= $ctrl.orders.last_page}">
+            <a href="#"
+               aria-label="Next"
+               ng-click="$ctrl.orders.current_page < $ctrl.orders.last_page && $ctrl.getOrders({page: $ctrl.orders.current_page + 1})">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
